@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% load widget_tweaks %}
+
+{% block content %}
+ <div class="content_title no_border">
+    New Paste
+ </div>
+ <form class="paste_form" method="post">{% csrf_token %}
+    <div class="textarea_border">
+       {% render_field form.body class="paste_textarea" %}
+    </div>
+    <div class="content_title">Optional Paste Settings</div>
+    <div class="form_frame_left">
+       <div class="form_frame">
+          <div class="form_left">
+             Syntax Highlighting:
+          </div>
+          <div class="form_right">
+             {% render_field form.language class="post_select" %}
+          </div>
+       </div>
+       <div class="form_frame">
+          <div class="form_left">
+             Paste Expiration:
+          </div>
+          <div class="form_right">
+             {% render_field form.expired class="post_select" %}
+           </div>
+       </div>
+       <div class="form_frame">
+          <div class="form_left">
+             Paste Name / Title:
+          </div>
+          <div class="form_right">
+             {% render_field form.title class="post_input" %}
+          </div>
+       </div>
+       <div class="form_frame">
+          <div class="form_left">
+             Author:
+          </div>
+          <div class="form_right">
+             {% render_field form.author class="post_input" %}
+          </div>
+       </div>
+       <div class="form_frame">
+          <div class="form_left">
+             &nbsp;
+          </div>
+          <div class="form_right">
+             <input name="submit" type="submit" class="button1 btnbig">
+          </div>
+       </div>
+    </div>
+ </form>
+{% endblock %}

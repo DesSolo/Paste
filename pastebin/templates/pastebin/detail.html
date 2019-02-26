@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load pastebin %}
+
+{% block content %}
+<div class="paste_box_frame">
+    <div class="paste_box_info">
+        <div class="paste_box_line1" title="Untitled"><h1>{{ object.title|default:'Untitled' }}</h1></div>
+        <div class="paste_box_line2">
+            <i class="fa fa-fw fa-user"></i> {{ object.author|default:'a guest' }}
+            <i class="fa fa-fw fa-calendar"></i><span title="{{ object.created }} ({{ object.created|timesince }} ago)"> {{ object.created|date }}</span>
+            <!--<i class="fa fa-fw fa-eye"></i><span title="Unique visits to this paste"> 3</span>-->
+            <i class="fa fa-fw fa-clock-o"></i><span title="When this paste gets automatically deleted"> in {{ object.get_expired_display }}</span>
+        </div>
+    </div>
+</div>
+<div id="code_frame2">
+    <div id="code_frame">
+        <div id="code_buttons">
+            <span class="go_right">
+                <a href="{% url 'raw' pk=object.pk %}" class="buttonsm">raw</a>
+                <a href="{% url 'download' pk=object.pk %}" class="buttonsm">download</a>
+            </span>
+            <span class="h_640"><a rel="" class="buttonsm">{{ object.language|lower }}</a></span> {{ object.get_size|filesizeformat }}
+        </div>
+        <div id="selectable">
+            {{ object.body|to_highlight:object.language|safe }}
+        </div>
+    </div>
+</div>
+<div class="content_title no_border">RAW Paste Data</div>
+<div class="textarea_border">
+    <textarea class="paste_code">{{ object.body }}</textarea>
+</div>
+{% endblock %}

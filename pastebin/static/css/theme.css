@@ -1,0 +1,212 @@
+body {
+	background-color: #fff;
+	color: #181818;
+	font-family: "segoe ui", "trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Sans-Serif;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	height: auto!important;
+	height: 100%
+}
+
+
+.header {
+	background: #023859;
+	background-image: linear-gradient(#023859, #02456C);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .52);
+	color: #fff;
+	font-size: .8em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5000
+}
+
+.header_wrap {
+	width: 1200px;
+	margin: 0 auto
+}
+
+.header_links_right {
+	float: right;
+}
+
+
+.header_links_right a {
+    color: white;
+	margin: 0 12px
+}
+
+.header_logo {
+	background: no-repeat 0 -2px;
+	background-size: 45px;
+	cursor: pointer;
+	float: left;
+	font-size: 1.75em;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0 25px 0 -5px;
+}
+
+.header_new_paste,
+.form_text,
+.tools_left {
+	float: left
+}
+
+.header_top {
+	clear: both;
+	height: 40px;
+	line-height: 40px;
+	padding: 5px
+}
+
+.new_paste_button {
+	background: #61BA65 no-repeat 8px 9px;
+	background-size: 13px 13px;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 400;
+	height: 30px;
+	line-height: 27px;
+	text-transform: lowercase;
+	margin: 6px 8px 0 0;
+	padding: 0 10px 0
+}
+
+.new_paste_button:hover {
+	background-color: #56B65B
+}
+
+.main_frame {
+	background-color: #F7F7F7;
+	border-bottom: 1px solid #ddd;
+	width: 100%
+}
+
+.super_frame {
+	min-width: 1100px;
+	width: 1200px;
+	margin: 0 auto
+}
+
+.monster_frame {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-radius: 0 0 3px 3px;
+	border-right: 1px solid #ddd;
+	margin: 50px 0 0
+}
+
+div.content_frame {
+	clear: both;
+	overflow: hidden;
+	margin: 10px 0 0;
+	padding: 10px 0
+}
+
+.content_center {
+	margin-left: 10px;
+	margin-right: 10px
+}
+
+.content_title {
+	border-bottom: 2px solid #ddd;
+	color: #333;
+	font-size: 1em;
+	font-weight: 600;
+	padding: 0 0 5px
+}
+
+.no_border {
+	border: 0
+}
+
+textarea.paste_code,
+textarea.paste_textarea {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-sizing: border-box;
+	display: block;
+	font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace, serif;
+	font-size: 13px;
+	height: 200px;
+	max-width: 100%;
+	min-width: 100%;
+	line-height: 21px;
+	width: 100%;
+	margin: 0;
+	padding: 8px 12px
+}
+
+.form_frame {
+	font-size: .8em
+}
+
+.form_frame_left {
+	float: left;
+	min-width: 558px;
+	max-width: 558px;
+	margin: 10px 10px 10px 0
+}
+
+.form_left {
+	float: left;
+	line-height: 35px;
+	width: 150px;
+	margin: 0 0 10px
+}
+
+.form_right {
+	float: left;
+	line-height: 35px;
+	min-width: 300px;
+	text-align: left;
+	margin: 0 0 10px
+}
+
+input.post_input,
+select.post_select {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	color: #181818;
+	font-family: "segoe ui", "trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Sans-Serif;
+	font-size: 1em;
+	width: 272px;
+	padding: 8px
+}
+
+.button1,
+.button2,
+input.button1 {
+	background-color: #ddd;
+	border-bottom: 2px solid #ccc;
+	border-left: 0;
+	border-radius: 3px;
+	border-right: 0;
+	border-top: 0;
+	color: #000;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "segoe ui", "trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Sans-Serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 27px;
+	line-height: 27px;
+	min-width: 54px;
+	text-align: center;
+	text-decoration: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	padding: 0 10px
+}

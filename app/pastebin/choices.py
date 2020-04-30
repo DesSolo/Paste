@@ -1297,4 +1297,4 @@ EXPIRED_DEFAULT = getattr(settings, 'EXPIRED_DEFAULT', '10M')
 
 LANGUAGE_CHOICE = getattr(settings, 'LANGUAGE', LANGUAGE)
 
-LANGUAGE_DEFAULT = getattr(settings, 'EXPIRED_DEFAULT', 'Text')
+LANGUAGE_DEFAULT = getattr(settings, 'LANGUAGE_DEFAULT', 'Text')

@@ -1,5 +1,11 @@
 Paste
 =====
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/dessolo/paste)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/dessolo/paste)
+![Docker Pulls](https://img.shields.io/docker/pulls/dessolo/paste)
+![Docker Image Version (latest by date)](https://img.shields.io/docker/v/dessolo/paste)
+![GitHub](https://img.shields.io/github/license/dessolo/Paste)
+
 *Simple implementation* https://pastebin.com
 ### Run server
 ```shell script

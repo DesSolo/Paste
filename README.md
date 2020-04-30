@@ -1,6 +1,14 @@
 Paste
 =====
 *Simple implementation* https://pastebin.com
+### Run server
+```shell script
+podman-compode up -d
+podman exec -it paste_paste_1 bash
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+```
 ### Environ
 |Key|Default|Description|
 |------|-------|------|
